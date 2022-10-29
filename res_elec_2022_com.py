@@ -3,14 +3,10 @@
 Created on Sat Oct 29 11:53:45 2022
 
 @author: louis
+
+création d'un fichier csv dans le répertoire dans lequel, le programme est enregistré. Le nom du fichier est : reselections2022communes.csv
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 28 21:15:40 2022
-
-@author: louis
-"""
 import requests
 import re
 
