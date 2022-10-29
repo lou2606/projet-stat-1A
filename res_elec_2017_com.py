@@ -3,6 +3,8 @@
 Created on Fri Oct 28 21:15:40 2022
 
 @author: louis
+
+création d'un fichier csv dans le répertoire dans lequel, le programme est enregistré. Le nom du fichier est : reselections2017communes.csv
 """
 import requests
 import re
