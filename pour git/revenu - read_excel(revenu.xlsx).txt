@@ -1,0 +1,9 @@
+revenu <- read_excel("revenu.xlsx")
+for ( i in 1:34965) revenu[i,5] <-substr(revenu[i,1],1,2)
+revenu_region_paca <- revenu[ (revenu[,5]== '04' | revenu[,5]== '05' | revenu[,5]== '06' | revenu[,5]== '13' | revenu[,5]== '83' | revenu[,5]== '84'),]
+for (i in 1:946) {region_paca[i,34]<- paste(region_paca[i,1], region_paca[i,3], sep = "")}
+colnames(region_paca)[34]<- "Code com"
+test <- merge( x = region_paca, y =  revenu_region_paca, by.x = "Code com", by.y = "Code")
+
+tresetrevpaca <- transform(tresetrevpaca, med = as.integer(med))
+tresetrevpaca <- transform(tresetrevpaca, med = (round(med, digits = -3)))
